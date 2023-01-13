@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     chatbotForm.addEventListener("submit", (e) => {
         e.preventDefault();
         const chatbotFormMessage = document.getElementById("chatbot-input").value;
-        fetch('http://localhost:8000/chatbot', {
+        fetch('https://webdevlab2.onrender.com/chatbot', {
             method: 'POST',
             body: JSON.stringify({"message":  chatbotFormMessage}),
             headers: {
