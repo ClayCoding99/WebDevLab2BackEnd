@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const fs = require('fs');
 
+var cors = require('cors');
+app.use(cors({origin: 'https://capable-zabaione-55b4c1.netlify.app'}));
+
 // app.use(express.static("client"));
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: true }));
