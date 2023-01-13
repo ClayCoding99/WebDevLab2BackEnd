@@ -9,7 +9,7 @@ app.use(cors({origin: 'https://capable-zabaione-55b4c1.netlify.app'}));
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: true }));
 
-app.use(req, res, next => {
+app.use((req, res, next) => {
         // Website you wish to allow to connect
     res.setHeader('Access-Control-Allow-Origin', 'https://capable-zabaione-55b4c1.netlify.app');
 
